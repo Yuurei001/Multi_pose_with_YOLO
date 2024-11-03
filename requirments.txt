@@ -1,0 +1,3 @@
+opencv-python
+opencv-python-headless  # Optional, for environments without GUI support
+ultralytics
