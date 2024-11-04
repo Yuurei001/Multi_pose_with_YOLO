@@ -5,6 +5,10 @@ from tkinter import filedialog
 from ultralytics import YOLO
 import threading
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 class PoseDetector:
     def __init__(self):
         # Khởi tạo giao diện
@@ -16,7 +20,11 @@ class PoseDetector:
         self.model = YOLO('yolov8n-pose.pt')
 
         # Tối ưu cho CPU
+<<<<<<< HEAD
         cv2.setNumThreads(8)  # Điều chỉnh số thread phù hợp với CPU
+=======
+        cv2.setNumThreads(4)  # Điều chỉnh số thread phù hợp với CPU
+>>>>>>> origin/main
         self.frame_count = 0
         self.fps = 0
         self.prev_time = time.time()
@@ -103,6 +111,10 @@ class PoseDetector:
     def run(self):
         self.window.mainloop()
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/main
 if __name__ == "__main__":
     detector = PoseDetector()
     detector.run()
